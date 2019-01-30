@@ -1,0 +1,25 @@
+{
+  "name": "myact",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nguyentuandat/myact.git"
+  },
+  "keywords": [
+    "example"
+  ],
+  "author": "Dat Nguyen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nguyentuandat/myact/issues"
+  },
+  "homepage": "https://github.com/nguyentuandat/myact#readme",
+  "dependencies": {
+    "@oorts/read-vn-number": "^0.1.3"
+  }
+}
