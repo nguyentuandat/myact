@@ -52,19 +52,29 @@ workflows:
   version: 2
   build-and-deploy-ssh:
     jobs:
-      - build
+      - build:
+          filters:
+            branches:
+              only: 
+                - master
       - deploy:
           requires:
             - build
           filters:
             branches:
-              only: master
+              only: 
+                - master
   build-and-deploy-dev-ssh:
     jobs:
-      - build
+      - build:
+          filters:
+            branches:
+              only: 
+                - dev
       - deploy-dev:
           requires:
             - build
           filters:
             branches:
-              only: dev
+              only: 
+                - dev
